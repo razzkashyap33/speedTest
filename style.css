@@ -482,7 +482,7 @@ body {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
