@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Speed Tester</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Background Elements -->
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-keyboard"></i>
+      <span>TypeMaster</span>
+    </div>
+    <nav class="nav-controls">
+      <div class="time-options">
+        <button class="time-btn" data-time="15">15s</button>
+        <button class="time-btn" data-time="30">30s</button>
+        <button class="time-btn active" data-time="60">60s</button>
+        <button class="time-btn" data-time="120">120s</button>
+      </div>
+      <div class="theme-toggle" id="themeToggle" title="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="wrap">
+      <input type="text" class="input-field" autofocus />
+
+      <!-- Typing Instructions -->
+      <div class="typing-instructions">
+        <i class="fas fa-info-circle"></i>
+        <span>Click anywhere or start typing to begin</span>
+      </div>
+
+      <div class="content-box">
+        <div class="typing-text">
+          <p></p>
+        </div>
+        <div class="cont">
+          <ul class="result-details">
+            <li class="time">
+              <i class="fas fa-clock"></i>
+              <div class="stat-content">
+                <p>Time</p>
+                <span><b>60</b>s</span>
+              </div>
+            </li>
+            <li class="mistake">
+              <i class="fas fa-times-circle"></i>
+              <div class="stat-content">
+                <p>Errors</p>
+                <span>0</span>
+              </div>
+            </li>
+            <li class="wpm">
+              <i class="fas fa-tachometer-alt"></i>
+              <div class="stat-content">
+                <p>WPM</p>
+                <span>0</span>
+              </div>
+            </li>
+            <li class="cpm">
+              <i class="fas fa-font"></i>
+              <div class="stat-content">
+                <p>CPM</p>
+                <span>0</span>
+              </div>
+            </li>
+            <li class="accuracy">
+              <i class="fas fa-bullseye"></i>
+              <div class="stat-content">
+                <p>Accuracy</p>
+                <span>100%</span>
+              </div>
+            </li>
+          </ul>
+          <button class="restart-btn">
+            <i class="fas fa-redo"></i>
+            <span>Restart</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Keyboard Visual -->
+      <div class="keyboard-hint">
+        <div class="key">Tab</div>
+        <span>+</span>
+        <div class="key">Enter</div>
+        <span class="hint-text">to restart</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/Aakash-gith/TypeMaster" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+      <p class="footer-text">
+        <i class="fas fa-heart"></i> Built with passion |
+        <span class="version">v1.0.0</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/para.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
